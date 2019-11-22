@@ -1,10 +1,26 @@
 # Swift-Node-Socket-Chat-App
 
-### Node
+### iOS Socket
+
+- **Edit**  TableMessageController.swift , SearchUserController.swift , ChatViewController.swift
+```swift
+let manager = SocketManager(socketURL: URL(string: "https://xxxxxx.herokuapp.com")!, config: [ .compress])
+```
+
+### MongoDB
+
+- **Edit** mongodb.js
+```javascript
+const url = "mongodb://<name>:<password>@cluster0-shard-00-00-fyamy.gcp.mongodb.net:27017,cluster0-shard-00-01-fyamy.gcp.mongodb.net:27017,cluster0-shard-00-02-fyamy.gcp.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority";
+```
+
+### Deploy
 
 1. Run `npm install` to install server dependencies.
 
 2. Run `node index` to start the development server.
+
+3. Deploy to Heroku.
 
 ### iOS
 
